@@ -1,0 +1,13 @@
+services:
+  web:
+      image: myapache:v1
+      container_name: apache_compose
+      ports:
+          - "8080:80"
+
+  grafana:
+      image: grafana/grafana:latest
+      container_name: grafana_compose
+      ports:
+          - "8081:3000"
+  
